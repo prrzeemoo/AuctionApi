@@ -1,0 +1,9 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>{{ auction.title }}</h1>
+    <p>{{ auction.description }}</p>
+    <p>{{ auction.price }}</p>
+
+    <a href="{{ url('auction_index') }}">Powrót</a>
+{% endblock %}
