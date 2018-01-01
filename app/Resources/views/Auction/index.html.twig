@@ -14,7 +14,15 @@
 
             <ul class="list-group">
                 <li class="list-group-item">Cena: {{ auction.price }} zł</li>
+                <li class="list-group-item">Cena wywoławcza: {{ auction.startingPrice }} zł</li>
+                <li class="list-group-item">Aukcja kończy się: {{ auction.expiresAt | date("Y-m-d H:i:s") }}</li>
             </ul>
+        </div>
+    {% else %}
+        <div class="panel panel-warning">
+            <div class="panel-body">
+                <h3>Niestety nie ma żadnej aktywnej aukcji.</h3>
+            </div>
         </div>
     {% endfor %}
 {% endblock %}
