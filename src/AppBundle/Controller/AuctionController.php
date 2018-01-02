@@ -45,7 +45,7 @@ class AuctionController extends Controller
 
         $finishForm = $this->createFormBuilder()
             ->setAction($this->generateUrl("auction_finish", ["id" => $auction->getId()]))
-            /*PONIŻSZĄ METODĘ MOŻNA DODAĆ LUB POMINĄĆ, GDYŻ DOMYŚLNIE USTAWIANA JEST W ADNOTACJI ROUTY action_finish
+            /*PONIŻSZĄ METODĘ MOŻNA DODAĆ LUB POMINĄĆ, GDYŻ DOMYŚLNIE USTAWIANA JEST W ADNOTACJI ROUTY nazwanej auction_finish
             ->setMethod(Request::METHOD_POST)*/
             ->add("submit", SubmitType::class, ["label" => "Zakończ"])
             ->getForm();
