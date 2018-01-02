@@ -5,6 +5,7 @@ namespace AppBundle\Controller;
 use AppBundle\Entity\Auction;
 use AppBundle\Form\AuctionType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -33,11 +34,19 @@ class AuctionController extends Controller
      */
     public function detailsAction(Auction $auction)
     {
-
         //        $entityManager = $this->getDoctrine()->getManager();
         //        $auction = $entityManager->getRepository(Auction::class)->findOneBy(["id" => $id]);
 
-        return $this->render("Auction/details.html.twig", ["auction" => $auction]);
+        $deleteForm = $this->createFormBuilder()
+            ->setAction($this->generateUrl("auction_delete", ["id" => $auction->getId()]))
+            ->setMethod(Request::METHOD_DELETE)
+            ->add("submit", SubmitType::class, ["label" => "Usuń"])
+            ->getForm();
+
+        return $this->render(
+            "Auction/details.html.twig",
+            ["auction" => $auction, "deleteForm" => $deleteForm->createView()]
+        );
     }
 
     /**
@@ -90,5 +99,21 @@ class AuctionController extends Controller
         }
 
         return $this->render("Auction/edit.html.twig", ["form" => $form->createView()]);
+    }
+
+    /**
+     * @Route("/auction/delete/{id}", name="auction_delete", methods={"DELETE"})
+     *
+     * @param Auction $auction
+     *
+     * @return \Symfony\Component\HttpFoundation\RedirectResponse
+     */
+    public function deleteAction(Auction $auction)
+    {
+        $entityManager = $this->getDoctrine()->getManager();
+        $entityManager->remove($auction);
+        $entityManager->flush();
+
+        return $this->redirectToRoute("auction_index");
     }
 }
