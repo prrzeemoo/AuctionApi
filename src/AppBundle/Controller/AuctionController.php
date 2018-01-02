@@ -27,7 +27,7 @@ class AuctionController extends Controller
     }
 
     /**
-     * @Route("/{id}", name="auction_details")
+     * @Route("/auction/details/{id}", name="auction_details")
      *
      * @param Auction $auction
      * @return Response
@@ -43,9 +43,20 @@ class AuctionController extends Controller
             ->add("submit", SubmitType::class, ["label" => "Usuń"])
             ->getForm();
 
+        $finishForm = $this->createFormBuilder()
+            ->setAction($this->generateUrl("auction_finish", ["id" => $auction->getId()]))
+            /*PONIŻSZĄ METODĘ MOŻNA DODAĆ LUB POMINĄĆ, GDYŻ DOMYŚLNIE USTAWIANA JEST W ADNOTACJI ROUTY action_finish
+            ->setMethod(Request::METHOD_POST)*/
+            ->add("submit", SubmitType::class, ["label" => "Zakończ"])
+            ->getForm();
+
         return $this->render(
             "Auction/details.html.twig",
-            ["auction" => $auction, "deleteForm" => $deleteForm->createView()]
+            [
+                "auction" => $auction,
+                "deleteForm" => $deleteForm->createView(),
+                "finishForm" => $finishForm->createView(),
+            ]
         );
     }
 
@@ -115,5 +126,25 @@ class AuctionController extends Controller
         $entityManager->flush();
 
         return $this->redirectToRoute("auction_index");
+    }
+
+    /**
+     * @Route("/auction/finish/{id}", name="auction_finish", methods={"POST"})
+     *
+     * @param Auction $auction
+     *
+     * @return \Symfony\Component\HttpFoundation\RedirectResponse
+     */
+    public function finishAction(Auction $auction)
+    {
+        $auction
+            ->setExpiresAt(new \DateTime())
+            ->setStatus(Auction::STATUS_FINISHED);
+
+        $entityManager = $this->getDoctrine()->getManager();
+        $entityManager->persist($auction);
+        $entityManager->flush();
+
+        return $this->redirectToRoute("auction_details", ["id" => $auction->getId()]);
     }
 }
