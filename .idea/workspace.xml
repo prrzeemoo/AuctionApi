@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="101d5c0b-a2a3-4c67-a2f3-400f6dc110c5" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Offer.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Repository/OfferRepository.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Auction.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Auction.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -18,14 +19,24 @@
       <file leaf-file-name="Offer.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Offer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="378">
-              <caret line="56" column="7" lean-forward="false" selection-start-line="56" selection-start-column="7" selection-end-line="56" selection-end-column="7" />
+            <state relative-caret-position="234">
+              <caret line="48" column="7" lean-forward="true" selection-start-line="48" selection-start-column="7" selection-end-line="48" selection-end-column="7" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Auction.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="OfferRepository.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Repository/OfferRepository.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="234">
+              <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Auction.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Auction.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="277">
@@ -447,7 +458,7 @@
       <workItem from="1514667507370" duration="2688000" />
       <workItem from="1514714285330" duration="8978000" />
       <workItem from="1514834203276" duration="6237000" />
-      <workItem from="1514895044437" duration="13276000" />
+      <workItem from="1514895044437" duration="13474000" />
     </task>
     <task id="LOCAL-00001" summary="Rozszerzenie encji Auction o dodatkowe pola">
       <created>1514732273402</created>
@@ -498,11 +509,18 @@
       <option name="project" value="LOCAL" />
       <updated>1514912082783</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Nowa Encja: Offer">
+      <created>1514919642804</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1514919642804</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="58715000" />
+    <option name="totallyTimeSpent" value="58913000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -577,7 +595,8 @@
     <MESSAGE value="Usuwanie aukcji" />
     <MESSAGE value="Akcja do kończenia aukcji" />
     <MESSAGE value="Panel zarządzania aukcjami" />
-    <option name="LAST_COMMIT_MESSAGE" value="Panel zarządzania aukcjami" />
+    <MESSAGE value="Nowa Encja: Offer" />
+    <option name="LAST_COMMIT_MESSAGE" value="Nowa Encja: Offer" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -885,14 +904,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Repository/OfferRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Controller/AuctionController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="439">
@@ -912,14 +923,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Offer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="56" column="7" lean-forward="false" selection-start-line="56" selection-start-column="7" selection-end-line="56" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Auction.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="277">
@@ -927,6 +930,22 @@
           <folding>
             <element signature="e#36#84#0#PHP" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Offer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="48" column="7" lean-forward="true" selection-start-line="48" selection-start-column="7" selection-end-line="48" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Repository/OfferRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="13" column="0" lean-forward="true" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
