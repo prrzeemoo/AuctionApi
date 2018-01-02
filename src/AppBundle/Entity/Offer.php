@@ -3,6 +3,7 @@
 namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
+use Gedmo\Mapping\Annotation as Gedmo;
 
 /**
  * Offer
@@ -12,6 +13,9 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Offer
 {
+    const TYPE_BUY = "buy";
+    const TYPE_AUCTION = "auction";
+
     /**
      * @var int
      *
@@ -39,6 +43,7 @@ class Offer
      * @var \DateTime
      *
      * @ORM\Column(name="created_at", type="datetime")
+     * @Gedmo\Timestampable(on="create")
      */
     private $createdAt;
 
@@ -46,6 +51,7 @@ class Offer
      * @var \DateTime
      *
      * @ORM\Column(name="update_at", type="datetime")
+     * @Gedmo\Timestampable(on="update")
      */
     private $updateAt;
 
