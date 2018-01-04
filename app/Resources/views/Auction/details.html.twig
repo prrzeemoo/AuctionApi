@@ -19,6 +19,8 @@
         <ul class="list-group">
             {% for offer in auction.offers %}
                 <li class="list-group-item">Oferta {{ offer.price }} zł, złożona {{ offer.createdAt | date("Y-m-d H:i:s") }}</li>
+            {% else %}
+                <li class="list-group-item"><b>Żadna oferta kupna tej aukcji nie została dotychczas złożona.</b></li>
             {% endfor %}
         </ul>
     </div>
