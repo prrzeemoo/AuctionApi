@@ -14,7 +14,7 @@ use Gedmo\Mapping\Annotation as Gedmo;
 class Offer
 {
     const TYPE_BUY = "buy";
-    const TYPE_AUCTION = "auction";
+    const TYPE_BID = "bid";
 
     /**
      * @var int
