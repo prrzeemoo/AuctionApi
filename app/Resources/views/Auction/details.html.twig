@@ -15,6 +15,13 @@
             <li class="list-group-item">Aukcja kończy się: {{ auction.expiresAt | date("Y-m-d H:i:s") }}</li>
         </ul>
     </div>
+    <div class="panel panel-default">
+        <ul class="list-group">
+            {% for offer in auction.offers %}
+                <li class="list-group-item">Oferta {{ offer.price }} zł, złożona {{ offer.createdAt | date("Y-m-d H:i:s") }}</li>
+            {% endfor %}
+        </ul>
+    </div>
 
     <a class="btn btn-default pull-left" href="{{ url('auction_index') }}">Powrót</a>
     <a class="btn btn-info pull-left" href="{{ url('auction_edit', {"id": auction.id}) }}">Edytuj</a>
