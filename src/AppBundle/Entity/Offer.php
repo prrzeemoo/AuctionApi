@@ -4,6 +4,7 @@ namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Gedmo\Mapping\Annotation as Gedmo;
+use Symfony\Component\Validator\Constraints as Assert;
 
 /**
  * Offer
@@ -29,6 +30,13 @@ class Offer
      * @var string
      *
      * @ORM\Column(name="price", type="decimal", precision=10, scale=2)
+     * @Assert\NotBlank(
+     *     message="Cena nie może być pusta"
+     * )
+     * @Assert\GreaterThan(
+     *     value="0",
+     *     message="Cena musi być większa od 0"
+     * )
      */
     private $price;
 
