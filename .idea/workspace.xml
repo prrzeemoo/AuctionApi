@@ -2,14 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="101d5c0b-a2a3-4c67-a2f3-400f6dc110c5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/User.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/AppKernel.php" afterPath="$PROJECT_DIR$/app/AppKernel.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/config.yml" afterPath="$PROJECT_DIR$/app/config/config.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/routing.yml" afterPath="$PROJECT_DIR$/app/config/routing.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/config/security.yml" afterPath="$PROJECT_DIR$/app/config/security.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.json" afterPath="$PROJECT_DIR$/composer.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/composer.lock" afterPath="$PROJECT_DIR$/composer.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Auction.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Auction.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/Offer.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/Offer.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/AppBundle/Entity/User.php" afterPath="$PROJECT_DIR$/src/AppBundle/Entity/User.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -21,54 +17,26 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/User.php">
+      <file leaf-file-name="Offer.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Offer.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="8" column="14" lean-forward="false" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+            <state relative-caret-position="288">
+              <caret line="83" column="30" lean-forward="true" selection-start-line="83" selection-start-column="30" selection-end-line="83" selection-end-column="30" />
               <folding>
-                <element signature="e#36#78#0#PHP" expanded="true" />
+                <element signature="e#36#68#0#PHP" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="security.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/security.yml">
+      <file leaf-file-name="User.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/User.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="12" column="14" lean-forward="false" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.yml" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/config/config.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="259">
-              <caret line="57" column="8" lean-forward="true" selection-start-line="57" selection-start-column="8" selection-end-line="57" selection-end-column="8" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="parameters.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" column="32" lean-forward="false" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="routing.yml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/config/routing.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="4" column="8" lean-forward="false" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
-              <folding />
+            <state relative-caret-position="385">
+              <caret line="33" column="63" lean-forward="true" selection-start-line="33" selection-start-column="63" selection-end-line="33" selection-end-column="63" />
+              <folding>
+                <element signature="e#36#84#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -99,18 +67,18 @@
         <option value="$PROJECT_DIR$/src/AppBundle/Form/BidType.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/base.html.twig" />
         <option value="$PROJECT_DIR$/app/Resources/views/Auction/add.html.twig" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Entity/Auction.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Entity/Offer.php" />
         <option value="$PROJECT_DIR$/app/Resources/views/Auction/details.html.twig" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/AuctionController.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Controller/OfferController.php" />
         <option value="$PROJECT_DIR$/src/AppBundle/Form/AuctionType.php" />
         <option value="$PROJECT_DIR$/app/AppKernel.php" />
-        <option value="$PROJECT_DIR$/src/AppBundle/Entity/User.php" />
         <option value="$PROJECT_DIR$/app/config/parameters.yml" />
         <option value="$PROJECT_DIR$/app/config/routing.yml" />
         <option value="$PROJECT_DIR$/app/config/security.yml" />
         <option value="$PROJECT_DIR$/app/config/config.yml" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Entity/Auction.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Entity/User.php" />
+        <option value="$PROJECT_DIR$/src/AppBundle/Entity/Offer.php" />
       </list>
     </option>
   </component>
@@ -161,7 +129,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -376,6 +343,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -496,7 +464,8 @@
       <workItem from="1515318837043" duration="12484000" />
       <workItem from="1515438008633" duration="3543000" />
       <workItem from="1515520649395" duration="3984000" />
-      <workItem from="1515695740036" duration="3627000" />
+      <workItem from="1515695740036" duration="6317000" />
+      <workItem from="1515834521360" duration="3932000" />
     </task>
     <task id="LOCAL-00001" summary="Rozszerzenie encji Auction o dodatkowe pola">
       <created>1514732273402</created>
@@ -631,11 +600,18 @@
       <option name="project" value="LOCAL" />
       <updated>1515441858162</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="Konfiguracja FOSUserBundle">
+      <created>1515699833464</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1515699833464</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="94381000" />
+    <option name="totallyTimeSpent" value="101003000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -650,7 +626,7 @@
     <frame x="-8" y="-8" width="1616" height="876" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17416452" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17609255" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32974428" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32974428" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -721,20 +697,14 @@
     <MESSAGE value="Walidacja pozostałych pól aukcji" />
     <MESSAGE value="Walidacja ceny wywoławczej" />
     <MESSAGE value="Walidacja licytacji" />
-    <option name="LAST_COMMIT_MESSAGE" value="Walidacja licytacji" />
+    <MESSAGE value="Konfiguracja FOSUserBundle" />
+    <option name="LAST_COMMIT_MESSAGE" value="Konfiguracja FOSUserBundle" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="44" column="21" lean-forward="false" selection-start-line="44" selection-start-column="21" selection-end-line="44" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/config/parameters.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
@@ -747,20 +717,20 @@
         <state relative-caret-position="126">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
-            <element signature="e#40#69#0#PHP" expanded="true" />
-            <element signature="e#805#830#0#PHP" expanded="true" />
-            <element signature="e#1339#1367#0#PHP" expanded="true" />
-            <element signature="e#1498#1514#0#PHP" expanded="true" />
-            <element signature="e#1780#1796#0#PHP" expanded="true" />
-            <element signature="e#2189#2200#0#PHP" expanded="true" />
-            <element signature="e#2453#2464#0#PHP" expanded="true" />
-            <element signature="e#2550#2577#0#PHP" expanded="true" />
-            <element signature="e#3892#3909#0#PHP" expanded="true" />
-            <element signature="e#4065#4088#0#PHP" expanded="true" />
-            <element signature="e#4812#4829#0#PHP" expanded="true" />
-            <element signature="e#4901#4925#0#PHP" expanded="true" />
-            <element signature="e#5495#5510#1#PHP" expanded="true" />
-            <element signature="e#6161#6178#0#PHP" expanded="true" />
+            <element signature="e#40#69#0#PHP" expanded="false" />
+            <element signature="e#805#830#0#PHP" expanded="false" />
+            <element signature="e#1339#1367#0#PHP" expanded="false" />
+            <element signature="e#1498#1514#0#PHP" expanded="false" />
+            <element signature="e#1780#1796#0#PHP" expanded="false" />
+            <element signature="e#2189#2200#0#PHP" expanded="false" />
+            <element signature="e#2453#2464#0#PHP" expanded="false" />
+            <element signature="e#2550#2577#0#PHP" expanded="false" />
+            <element signature="e#3892#3909#0#PHP" expanded="false" />
+            <element signature="e#4065#4088#0#PHP" expanded="false" />
+            <element signature="e#4812#4829#0#PHP" expanded="false" />
+            <element signature="e#4901#4925#0#PHP" expanded="false" />
+            <element signature="e#5495#5510#1#PHP" expanded="false" />
+            <element signature="e#6161#6178#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -777,20 +747,20 @@
         <state relative-caret-position="162">
           <caret line="9" column="0" lean-forward="false" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
-            <element signature="e#40#69#0#PHP" expanded="true" />
-            <element signature="e#805#830#0#PHP" expanded="true" />
-            <element signature="e#1339#1367#0#PHP" expanded="true" />
-            <element signature="e#1498#1514#0#PHP" expanded="true" />
-            <element signature="e#1780#1796#0#PHP" expanded="true" />
-            <element signature="e#2189#2200#0#PHP" expanded="true" />
-            <element signature="e#2453#2464#0#PHP" expanded="true" />
-            <element signature="e#2550#2577#0#PHP" expanded="true" />
-            <element signature="e#3892#3909#0#PHP" expanded="true" />
-            <element signature="e#4065#4088#0#PHP" expanded="true" />
-            <element signature="e#4812#4829#0#PHP" expanded="true" />
-            <element signature="e#4901#4925#0#PHP" expanded="true" />
-            <element signature="e#5495#5510#1#PHP" expanded="true" />
-            <element signature="e#6161#6178#0#PHP" expanded="true" />
+            <element signature="e#40#69#0#PHP" expanded="false" />
+            <element signature="e#805#830#0#PHP" expanded="false" />
+            <element signature="e#1339#1367#0#PHP" expanded="false" />
+            <element signature="e#1498#1514#0#PHP" expanded="false" />
+            <element signature="e#1780#1796#0#PHP" expanded="false" />
+            <element signature="e#2189#2200#0#PHP" expanded="false" />
+            <element signature="e#2453#2464#0#PHP" expanded="false" />
+            <element signature="e#2550#2577#0#PHP" expanded="false" />
+            <element signature="e#3892#3909#0#PHP" expanded="false" />
+            <element signature="e#4065#4088#0#PHP" expanded="false" />
+            <element signature="e#4812#4829#0#PHP" expanded="false" />
+            <element signature="e#4901#4925#0#PHP" expanded="false" />
+            <element signature="e#5495#5510#1#PHP" expanded="false" />
+            <element signature="e#6161#6178#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -972,26 +942,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Auction.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="116" column="7" lean-forward="false" selection-start-line="116" selection-start-column="7" selection-end-line="116" selection-end-column="7" />
-          <folding>
-            <element signature="e#36#84#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Offer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="37" column="46" lean-forward="false" selection-start-line="37" selection-start-column="46" selection-end-line="37" selection-end-column="46" />
-          <folding>
-            <element signature="e#36#68#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/Resources/views/Auction/add.html.twig">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="54">
@@ -1026,7 +976,7 @@
         <state relative-caret-position="1152">
           <caret line="69" column="40" lean-forward="false" selection-start-line="69" selection-start-column="40" selection-end-line="69" selection-end-column="40" />
           <folding>
-            <element signature="e#40#69#0#PHP" expanded="true" />
+            <element signature="e#40#69#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1052,20 +1002,20 @@
         <state relative-caret-position="90">
           <caret line="97" column="98" lean-forward="false" selection-start-line="97" selection-start-column="98" selection-end-line="97" selection-end-column="98" />
           <folding>
-            <element signature="e#40#69#0#PHP" expanded="true" />
-            <element signature="e#805#830#0#PHP" expanded="true" />
-            <element signature="e#1339#1367#0#PHP" expanded="true" />
-            <element signature="e#1498#1514#0#PHP" expanded="true" />
-            <element signature="e#1780#1796#0#PHP" expanded="true" />
-            <element signature="e#2189#2200#0#PHP" expanded="true" />
-            <element signature="e#2453#2464#0#PHP" expanded="true" />
-            <element signature="e#2550#2577#0#PHP" expanded="true" />
-            <element signature="e#3892#3909#0#PHP" expanded="true" />
-            <element signature="e#4065#4088#0#PHP" expanded="true" />
-            <element signature="e#4812#4829#0#PHP" expanded="true" />
-            <element signature="e#4901#4925#0#PHP" expanded="true" />
-            <element signature="e#5495#5510#1#PHP" expanded="true" />
-            <element signature="e#6161#6178#0#PHP" expanded="true" />
+            <element signature="e#40#69#0#PHP" expanded="false" />
+            <element signature="e#805#830#0#PHP" expanded="false" />
+            <element signature="e#1339#1367#0#PHP" expanded="false" />
+            <element signature="e#1498#1514#0#PHP" expanded="false" />
+            <element signature="e#1780#1796#0#PHP" expanded="false" />
+            <element signature="e#2189#2200#0#PHP" expanded="false" />
+            <element signature="e#2453#2464#0#PHP" expanded="false" />
+            <element signature="e#2550#2577#0#PHP" expanded="false" />
+            <element signature="e#3892#3909#0#PHP" expanded="false" />
+            <element signature="e#4065#4088#0#PHP" expanded="false" />
+            <element signature="e#4812#4829#0#PHP" expanded="false" />
+            <element signature="e#4901#4925#0#PHP" expanded="false" />
+            <element signature="e#5495#5510#1#PHP" expanded="false" />
+            <element signature="e#6161#6178#0#PHP" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1074,7 +1024,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="4" column="32" lean-forward="false" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1082,7 +1031,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
           <caret line="4" column="8" lean-forward="false" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1090,7 +1038,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
           <caret line="12" column="14" lean-forward="false" selection-start-line="12" selection-start-column="14" selection-end-line="12" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1102,21 +1049,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/User.php">
+    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="14" lean-forward="false" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+        <state relative-caret-position="259">
+          <caret line="57" column="8" lean-forward="false" selection-start-line="57" selection-start-column="8" selection-end-line="57" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vendor/doctrine/collections/lib/Doctrine/Common/Collections/ArrayCollection.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="239">
+          <caret line="33" column="6" lean-forward="false" selection-start-line="33" selection-start-column="6" selection-end-line="33" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Auction.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4336">
+          <caret line="354" column="22" lean-forward="false" selection-start-line="354" selection-start-column="22" selection-end-line="354" selection-end-column="22" />
           <folding>
-            <element signature="e#36#78#0#PHP" expanded="true" />
+            <element signature="e#36#84#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/config/config.yml">
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/User.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="259">
-          <caret line="57" column="8" lean-forward="true" selection-start-line="57" selection-start-column="8" selection-end-line="57" selection-end-column="8" />
-          <folding />
+        <state relative-caret-position="385">
+          <caret line="33" column="63" lean-forward="true" selection-start-line="33" selection-start-column="63" selection-end-line="33" selection-end-column="63" />
+          <folding>
+            <element signature="e#36#84#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AppBundle/Entity/Offer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="83" column="30" lean-forward="true" selection-start-line="83" selection-start-column="30" selection-end-line="83" selection-end-column="30" />
+          <folding>
+            <element signature="e#36#68#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
