@@ -1,0 +1,28 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Moje aukcje</h1>
+
+    {% for auction in auctions %}
+        <div class="panel panel-default">
+            <div class="panel-heading">
+                <h4><a href="{{ url("my_auction_details", {"id": auction.id}) }}">{{ auction.title }}</a></h4>
+            </div>
+            <div class="panel-body">
+                <p>{{ auction.description }}</p>
+            </div>
+
+            <ul class="list-group">
+                <li class="list-group-item">Cena: {{ auction.price }} zł</li>
+                <li class="list-group-item">Cena wywoławcza: {{ auction.startingPrice }} zł</li>
+                <li class="list-group-item">Aukcja kończy się: {{ auction.expiresAt | date("Y-m-d H:i:s") }}</li>
+            </ul>
+        </div>
+    {% else %}
+        <div class="panel panel-warning">
+            <div class="panel-body">
+                <h3>Niestety nie ma żadnej aktywnej aukcji.</h3>
+            </div>
+        </div>
+    {% endfor %}
+{% endblock %}
