@@ -6,6 +6,7 @@ use AppBundle\Entity\Auction;
 use AppBundle\Entity\Offer;
 use AppBundle\Form\BidType;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
+use Symfony\Component\HttpFoundation\RedirectResponse;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\Routing\Annotation\Route;
 
@@ -16,10 +17,12 @@ class OfferController extends Controller
      *
      * @param Auction $auction
      *
-     * @return \Symfony\Component\HttpFoundation\RedirectResponse
+     * @return RedirectResponse
      */
     public function buyAction(Auction $auction)
     {
+        $this->denyAccessUnlessGranted("ROLE_USER");
+
         $offer = new Offer();
         $offer
             ->setAuction($auction)
@@ -45,10 +48,12 @@ class OfferController extends Controller
      * @param Request $request
      * @param Auction $auction
      *
-     * @return \Symfony\Component\HttpFoundation\RedirectResponse
+     * @return RedirectResponse
      */
     public function bidAction(Request $request, Auction $auction)
     {
+        $this->denyAccessUnlessGranted("ROLE_USER");
+
         $offer = new Offer();
         $bidForm = $this->createForm(BidType::class, $offer);
 

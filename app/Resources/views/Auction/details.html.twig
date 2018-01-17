@@ -27,12 +27,20 @@
 
     <a class="btn btn-default pull-left" href="{{ url('auction_index') }}">Powrót</a>
 
-    {{ form_start(buyForm, {"attr": {"class": "pull-left"}}) }}
-        {{ form_widget(buyForm.submit, {"attr": {"class": "btn-success"}}) }}
-        {{ form_rest(buyForm) }}
-    {{ form_end(buyForm) }}
+    {% if is_granted("ROLE_USER") %}
+        {{ form_start(buyForm, {"attr": {"class": "pull-left"}}) }}
+            {{ form_widget(buyForm.submit, {"attr": {"class": "btn-success"}}) }}
+            {{ form_rest(buyForm) }}
+        {{ form_end(buyForm) }}
+    {% endif %}
 
     <div class="clearfix"></div>
 
-    {{ form(bidForm, {"attr": {"novalidate": "novalidate"}}) }}
+    {% if is_granted("ROLE_USER") %}
+        {{ form(bidForm, {"attr": {"novalidate": "novalidate"}}) }}
+    {% endif %}
+
+    {% if not is_granted("ROLE_USER") %}
+        Żeby kupować musisz się zalogować
+    {% endif %}
 {% endblock %}
