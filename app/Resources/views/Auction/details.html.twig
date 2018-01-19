@@ -25,20 +25,32 @@
         </ul>
     </div>
 
-    <a class="btn btn-default pull-left" href="{{ url('auction_index') }}">Powrót</a>
-
     {% if is_granted("ROLE_USER") %}
-        {{ form_start(buyForm, {"attr": {"class": "pull-left"}}) }}
-            {{ form_widget(buyForm.submit, {"attr": {"class": "btn-success"}}) }}
-            {{ form_rest(buyForm) }}
-        {{ form_end(buyForm) }}
+        <div class="panel panel-success">
+            <div class="panel-body">
+                {{ form_start(buyForm, {"attr": {"class": "pull-left", "style": "padding-right: 10px"}}) }}
+                    {{ form_widget(buyForm.submit, {"attr": {"class": "btn-success"}}) }}
+                    {{ form_rest(buyForm) }}
+                {{ form_end(buyForm) }}
+
+                <div class="input-group">
+                    {{ form_start(bidForm, {"attr": {"novalidate": "novalidate", "class": "pull-left"}}) }}
+                        <div class="input-group">
+                            {{ form_widget(bidForm.price) }}
+                            <span class="input-group-btn">
+                                {{ form_widget(bidForm.submit) }}
+                            </span>
+                        </div>
+                        {{ form_rest(bidForm) }}
+                    {{ form_end(bidForm) }}
+                </div>
+
+                <div class="clearfix"></div>
+            </div>
+        </div>
     {% endif %}
 
-    <div class="clearfix"></div>
-
-    {% if is_granted("ROLE_USER") %}
-        {{ form(bidForm, {"attr": {"novalidate": "novalidate"}}) }}
-    {% endif %}
+    <a class="btn btn-default" href="{{ url('auction_index') }}">Powrót</a>
 
     {% if not is_granted("ROLE_USER") %}
         Żeby kupować musisz się zalogować
