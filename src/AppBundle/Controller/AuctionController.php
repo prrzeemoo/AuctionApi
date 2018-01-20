@@ -22,6 +22,9 @@ class AuctionController extends Controller
         $entityManager = $this->getDoctrine()->getManager();
         $auctions = $entityManager->getRepository(Auction::class)->findBy(["status" => Auction::STATUS_ACTIVE]);
 
+        $logger = $this->get("logger");
+        $logger->info("użytkownik wszedł na akcję index");
+
         return $this->render("Auction/index.html.twig", ["auctions" => $auctions]);
     }
 
