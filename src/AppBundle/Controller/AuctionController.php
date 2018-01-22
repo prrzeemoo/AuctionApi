@@ -4,6 +4,7 @@ namespace AppBundle\Controller;
 
 use AppBundle\Entity\Auction;
 use AppBundle\Form\BidType;
+use AppBundle\Service\DateService;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\HttpFoundation\Response;
@@ -24,6 +25,10 @@ class AuctionController extends Controller
 
         $logger = $this->get("logger");
         $logger->info("użytkownik wszedł na akcję index");
+
+        $dateService = $this->get(DateService::class);
+
+        $logger->info("Aktualny dzień miesiąca to " . $dateService->getDay(new \DateTime()));
 
         return $this->render("Auction/index.html.twig", ["auctions" => $auctions]);
     }
